@@ -27,9 +27,10 @@
             this.$lis.on('click', function () {
                 self.$lis.removeClass('active');
                 self.$tabPanels.hide();
+                var $this = $(this);
                 var index = $this.index();
                 self.$tabPanels.eq(index).show();
-                $(this).addClass('active');
+                $this.addClass('active');
             });
         }
     });
